@@ -60,7 +60,7 @@ typedef uint16_t line_t; // Bigger images OK on other boards
 
 // Select from multiple images using tactile button (#1489) between pin and
 // ground.  Requires suitably-built graphics.h file w/more than one image.
-#define SELECT_PIN 3
+// #define SELECT_PIN 3
 
 // Optional feature -- not enabled here, no space -- a vibration switch
 // (aligned perpendicular to leash) is used as a poor man's accelerometer.
@@ -69,7 +69,7 @@ typedef uint16_t line_t; // Bigger images OK on other boards
 // bump, while the 'medium' switch requires a certain spin rate which may
 // not trigger if you're doing mellow spins.  Neither is perfect.  To leave
 // that out and simply have the poi run always-on, comment out this line:
-//#define MOTION_PIN 2
+#define MOTION_PIN 1
 
 // Another optional feature not enable due to physical size -- powering down
 // DotStars when idle conserves more battery.  Use a PNP transistor (e.g.
